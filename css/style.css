@@ -136,3 +136,54 @@ body .form .form__item__pas .form__item__pas__par {
   line-height: 18px;
   padding-top: 8px;
 }
+body .check__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  padding: 0px 98px 35px 98px;
+}
+body .check__block .check__block__item {
+  display: none;
+}
+body .check__block .fake__box {
+  display: block;
+  position: relative;
+  width: 24px;
+  height: 24px;
+  border-radius: 8px;
+  border: 1px solid rgb(204, 204, 204);
+  background: rgb(255, 255, 255);
+}
+body .check__block .fake__box::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 22px;
+  height: 22px;
+  border-radius: 8px;
+  background: rgb(122, 92, 250);
+  opacity: 0;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+body .check__block .check__block__item:checked + .fake__box::before {
+  opacity: 1;
+}
+body .check__block .check__text {
+  padding-left: 8px;
+  color: rgb(102, 102, 102);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}

@@ -118,4 +118,56 @@ body{
         }
     }
 
+
+
+    .check__block{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        text-align: center;
+        padding: 0px 98px 35px 98px;
+
+        .check__block__item{
+            display: none;
+        }
+
+        .fake__box{
+            display: block;
+            position: relative;
+            width: 24px;
+            height: 24px;
+            border-radius: 8px;
+            border: 1px solid rgb(204, 204, 204);
+            background: rgb(255, 255, 255);  
+            
+            &::before{
+                content: "";
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 22px;
+                height: 22px;
+                border-radius: 8px;
+                background: rgb(122, 92, 250);
+                opacity: 0;
+                transition: .2s;
+            }
+        }
+
+        .check__block__item:checked + .fake__box::before{
+            opacity: 1;
+        }
+
+        .check__text{
+            padding-left: 8px;
+            color: rgb(102, 102, 102);
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+        }
+    }
+    
+    
+
 }
