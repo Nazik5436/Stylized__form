@@ -15,17 +15,23 @@
     <form action="#" class="form">
 
         <div class="form__item__name">
-            <label for="name" class="form__item__name">Username</label>
-            <input type="text" name="name" id="name" class="form__item__input__name" placeholder="Enter Username">
+            <label for="name" class="form__item__name__label">Username</label>
+            <input type="text" name="name" id="name" class="form__item__input__name" placeholder="Enter username" minlength="1">
         </div>
 
-        <!-- <div class="form__item__pas">
-            <label for="text" class="form__item__text">Username</label>
-            <input type="text" name="text" id="text" class="form__item__input" placeholder="Enter Username">
-        </div> -->
+        <div class="form__item__mail">
+            <label for="mail" class="form__item__mail__label">Email</label>
+            <input type="email" name="mail" id="mail" class="form__item__input__mail" placeholder="@mail.com" minlength="1">
+        </div>
 
+        <div class="form__item__pas">
+            <label for="pas" class="form__item__pas__label">Password</label>
+            <input type="password" name="pas" id="pas" class="form__item__input__pas" placeholder="Enter password" minlength="4" maxlength="12">
+            <p class="form__item__pas__par">Your password is between 4 and 12 characters</p>
+        </div>
 
-
+        
+        <label class="check__block"></label>
     </form>
 
 </body>

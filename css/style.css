@@ -1,6 +1,6 @@
 body {
   font-family: Noto Sans;
-  background: rgb(122, 92, 250);
+  background: rgb(196, 183, 255);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -29,9 +29,9 @@ body .form .form__item__name {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: start;
-  padding: 122px 98px 58px 98px;
+  padding: 60px 98px 35px 98px;
 }
-body .form .form__item__name .form__item__name {
+body .form .form__item__name .form__item__name__label {
   font-size: 12px;
   font-weight: 600;
   line-height: 18px;
@@ -41,7 +41,6 @@ body .form .form__item__name .form__item__name {
 body .form .form__item__name .form__item__input__name {
   width: 564px;
   padding: 16px;
-  border: 1px solid rgb(204, 204, 204);
   color: rgb(102, 102, 102);
   font-family: Noto Sans;
   font-size: 16px;
@@ -49,9 +48,91 @@ body .form .form__item__name .form__item__input__name {
   line-height: 24px;
   border-radius: 8px;
   background: rgb(255, 255, 255);
+  border: 1px solid rgb(204, 204, 204);
 }
 body .form .form__item__name .form__item__input__name:focus {
   outline: none;
   border: 2px solid rgb(122, 92, 250);
   background: rgb(255, 255, 255);
+}
+body .form .form__item__mail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  padding: 0px 98px 35px 98px;
+}
+body .form .form__item__mail .form__item__mail__label {
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 18px;
+  color: rgb(102, 102, 102);
+  padding-bottom: 8px;
+}
+body .form .form__item__mail .form__item__input__mail {
+  width: 564px;
+  padding: 16px;
+  color: rgb(102, 102, 102);
+  font-family: Noto Sans;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  border-radius: 8px;
+  background: rgb(255, 255, 255);
+  border: 1px solid rgb(204, 204, 204);
+}
+body .form .form__item__mail .form__item__input__mail:focus {
+  outline: none;
+  border: 2px solid rgb(122, 92, 250);
+  background: rgb(255, 255, 255);
+}
+body .form .form__item__pas {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  padding: 0px 98px 35px 98px;
+}
+body .form .form__item__pas .form__item__pas__label {
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 18px;
+  color: rgb(102, 102, 102);
+  padding-bottom: 8px;
+}
+body .form .form__item__pas .form__item__input__pas {
+  width: 564px;
+  padding: 16px;
+  color: rgb(102, 102, 102);
+  font-family: Noto Sans;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  border-radius: 8px;
+  background: rgb(255, 255, 255);
+  border: 1px solid rgb(204, 204, 204);
+}
+body .form .form__item__pas .form__item__input__pas:focus {
+  outline: none;
+  border: 2px solid rgb(122, 92, 250);
+  background: rgb(255, 255, 255);
+}
+body .form .form__item__pas .form__item__pas__par {
+  color: rgb(102, 102, 102);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  padding-top: 8px;
 }
