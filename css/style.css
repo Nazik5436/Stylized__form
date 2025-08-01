@@ -187,55 +187,54 @@ body .check__block .check__text {
   font-weight: 400;
   line-height: 24px;
 }
-body .tog__container {
+body .container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   padding: 0px 98px 35px 98px;
 }
-body .tog__container .button {
-  position: relative;
-  cursor: pointer;
+body .button {
+  background: rgb(122, 92, 250);
   width: 49px;
   height: 24px;
-  border-radius: 32px;
-  border: 1px solid rgb(204, 204, 204);
-  background: rgb(255, 255, 255);
+  border-radius: 200px;
+  cursor: pointer;
+  position: relative;
   -webkit-transition: 0.2s;
   transition: 0.2s;
+  border: 1px solid rgb(204, 204, 204);
 }
-body .tog__container .button::before {
+body .button::before {
   content: "";
   position: absolute;
-  width: 49px;
-  height: 24px;
-  border-radius: 32px;
-  margin: 1px;
+  width: 18px;
+  height: 18px;
+  border-radius: 200px;
+  margin: 3px;
   background-color: white;
   -webkit-transition: 0.2s;
   transition: 0.2s;
 }
-body .tog__container .tog__par {
+body .tog__par {
   color: rgb(102, 102, 102);
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
   padding: 0 0 0 10px;
 }
-body .tog__container .toggle:checked + .button {
-  background: rgb(122, 92, 250);
+body .check:checked + .button {
+  background: rgb(196, 183, 255);
 }
-body .tog__container .toggle:checked + .button::before {
-  -webkit-transform: translateX(45px);
-          transform: translateX(45px);
+body .check:checked + .button::before {
+  -webkit-transform: translateX(26px);
+          transform: translateX(26px);
 }
-body .tog__container .toggle {
+body .check {
   display: none;
 }
