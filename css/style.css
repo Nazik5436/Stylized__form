@@ -1,0 +1,57 @@
+body {
+  font-family: Noto Sans;
+  background: rgb(122, 92, 250);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+body .form {
+  width: 760px;
+  height: 1200px;
+  background: rgb(255, 255, 255);
+  border-radius: 10px;
+  margin: 80px;
+}
+body .form .form__item__name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  padding: 122px 98px 58px 98px;
+}
+body .form .form__item__name .form__item__name {
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 18px;
+  color: rgb(102, 102, 102);
+  padding-bottom: 8px;
+}
+body .form .form__item__name .form__item__input__name {
+  width: 564px;
+  padding: 16px;
+  border: 1px solid rgb(204, 204, 204);
+  color: rgb(102, 102, 102);
+  font-family: Noto Sans;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  border-radius: 8px;
+  background: rgb(255, 255, 255);
+}
+body .form .form__item__name .form__item__input__name:focus {
+  outline: none;
+  border: 2px solid rgb(122, 92, 250);
+  background: rgb(255, 255, 255);
+}

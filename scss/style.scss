@@ -1,0 +1,62 @@
+@mixin column{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+@mixin text-label{
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 18px;
+    color: rgb(102, 102, 102);
+}
+
+
+
+body{
+    font-family: Noto Sans;
+    background: rgb(122, 92, 250);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    .form{
+        width: 760px;
+        height: 1200px;
+        background: rgb(255, 255, 255);
+        border-radius: 10px;
+        margin: 80px;
+
+
+        .form__item__name{
+        @include column;
+        padding: 122px 98px 58px 98px;
+
+            .form__item__name{
+                @include text-label;
+                padding-bottom: 8px;
+            }
+
+            .form__item__input__name{
+                width: 564px;
+                padding: 16px;
+                border: 1px solid rgb(204, 204, 204);
+                color: rgb(102, 102, 102);
+                font-family: Noto Sans;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 24px;
+                border-radius: 8px;
+                background: rgb(255, 255, 255);
+
+                &:focus{
+                    outline: none;
+                    border: 2px solid rgb(122, 92, 250);
+                    background: rgb(255, 255, 255);
+                }
+            }
+        }
+    }
+
+}
