@@ -187,3 +187,55 @@ body .check__block .check__text {
   font-weight: 400;
   line-height: 24px;
 }
+body .tog__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0px 98px 35px 98px;
+}
+body .tog__container .button {
+  position: relative;
+  cursor: pointer;
+  width: 49px;
+  height: 24px;
+  border-radius: 32px;
+  border: 1px solid rgb(204, 204, 204);
+  background: rgb(255, 255, 255);
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+body .tog__container .button::before {
+  content: "";
+  position: absolute;
+  width: 49px;
+  height: 24px;
+  border-radius: 32px;
+  margin: 1px;
+  background-color: white;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+body .tog__container .tog__par {
+  color: rgb(102, 102, 102);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  padding: 0 0 0 10px;
+}
+body .tog__container .toggle:checked + .button {
+  background: rgb(122, 92, 250);
+}
+body .tog__container .toggle:checked + .button::before {
+  -webkit-transform: translateX(45px);
+          transform: translateX(45px);
+}
+body .tog__container .toggle {
+  display: none;
+}
