@@ -228,13 +228,43 @@ body .tog__par {
   line-height: 24px;
   padding: 0 0 0 10px;
 }
-body .check:checked + .button {
+body .tog:checked + .button {
   background: rgb(196, 183, 255);
 }
-body .check:checked + .button::before {
-  -webkit-transform: translateX(26px);
-          transform: translateX(26px);
+body .tog:checked + .button::before {
+  -webkit-transform: translateX(25px);
+          transform: translateX(25px);
 }
-body .check {
+body .tog {
   display: none;
+}
+body .radio {
+  display: none;
+}
+body .fake {
+  display: block;
+  width: 20px;
+  height: 20px;
+  border: 1px solid black;
+  border-radius: 50%;
+  position: relative;
+}
+body .fake::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  display: block;
+  width: 10px;
+  height: 10px;
+  background: green;
+  opacity: 0;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  border-radius: 50%;
+}
+body .radio:checked + .fake::before {
+  opacity: 1;
 }

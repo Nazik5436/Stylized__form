@@ -173,55 +173,7 @@ body{
 
 
 
-    // .tog__container{
-    //     display: flex;
-    //     flex-direction: row;
-    //     align-items: center;
-    //     padding: 0px 98px 35px 98px;
 
-    //     .button{
-    //         position: relative;
-    //         cursor: pointer;
-    //         width: 49px;
-    //         height: 24px;
-    //         border-radius: 32px;
-    //         border: 1px solid rgb(204, 204, 204);
-    //         background: rgb(255, 255, 255);
-    //         transition: 0.2s;
-
-    //         &::before{
-    //             content: "";
-    //             position: absolute;
-    //             width: 49px;
-    //             height: 24px;
-    //             border-radius: 32px;            
-    //             margin: 1px;
-    //             background-color: white;
-    //             transition: 0.2s;
-    //         }
-    //     }
-
-    //     .tog__par{
-    //         color: rgb(102, 102, 102);
-    //         font-size: 16px;
-    //         font-weight: 400;
-    //         line-height: 24px;
-    //         padding: 0 0 0 10px;
-    //     }
-
-
-    //     .toggle:checked + .button{
-    //         background: rgb(122, 92, 250);
-    //     }
-
-    //     .toggle:checked + .button::before{
-    //         transform: translateX(45px);
-    //     }
-
-    //     .toggle{
-    //         display: none;
-    //     }
-    // }
 
 
     .container{
@@ -261,16 +213,50 @@ body{
     padding: 0 0 0 10px;
 }
 
-.check:checked + .button{
+.tog:checked + .button{
     background: rgb(196, 183, 255);
 }
 
-.check:checked +.button::before{
-    transform: translateX(26px);
+.tog:checked +.button::before{
+    transform: translateX(25px);
 }
     
-.check{
+.tog{
     display: none;
 }
 
+
+.radio{
+    display: none;
 }
+
+.fake{
+    display: block;
+    width: 20px;
+    height: 20px;
+    border: 1px solid black;
+    border-radius: 50%;
+    position: relative;
+
+    &::before{
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: block;
+        width: 10px;
+        height:10px;
+        background: green;
+        opacity: 0;
+        transition: .2s;
+        border-radius: 50%;
+    }
+}
+
+.radio:checked + .fake::before{
+    opacity: 1;
+}
+
+}
+
